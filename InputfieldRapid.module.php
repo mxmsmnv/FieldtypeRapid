@@ -14,7 +14,7 @@ class InputfieldRapid extends Inputfield {
 	public static function getModuleInfo(): array {
 		return [
 			'title'   => 'Rapid Input',
-			'version' => 125,
+			'version' => 126,
 			'summary' => 'Admin Inputfield for Rapid. Uses vendored dist/editor.js.',
 			'icon'    => 'bolt',
 			'author'  => 'Maxim Semenov',
@@ -28,6 +28,11 @@ class InputfieldRapid extends Inputfield {
 	public function setField(Field $f): void { $this->field = $f; }
 
 	// ── Render ────────────────────────────────────────────────────────────
+
+	public function renderReady(?Inputfield $parent = null, $renderValueMode = false) {
+		$this->loadAssets();
+		return parent::renderReady($parent, $renderValueMode);
+	}
 
 	public function ___render(): string {
 		$this->loadAssets();

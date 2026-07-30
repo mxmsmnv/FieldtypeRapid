@@ -5,6 +5,13 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ---
 
+## [1.2.6] — 2026-07-30
+
+### Fixed
+
+- Editor.js assets are now registered during `renderReady()`, allowing
+  Repeater and Repeater Matrix to preload them before AJAX-loaded items render.
+
 ## [1.2.5] — 2026-07-11
 
 ### Added

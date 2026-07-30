@@ -21,7 +21,7 @@ class FieldtypeRapid extends Fieldtype {
 	public static function getModuleInfo(): array {
 		return [
 			'title'    => 'Rapid',
-			'version'  => 125,
+			'version'  => 126,
 			'summary'  => 'Editor.js block editor field for ProcessWire.',
 			'icon'     => 'bolt',
 			'author'   => 'Maxim Semenov',

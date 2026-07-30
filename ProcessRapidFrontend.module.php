@@ -27,7 +27,7 @@ class ProcessRapidFrontend extends WireData implements Module {
 	public static function getModuleInfo(): array {
 		return [
 			'title'    => 'Rapid Frontend Editor',
-			'version'  => 125,
+			'version'  => 126,
 			'summary'  => 'Provides frontend editing support for Rapid fields.',
 			'author'   => 'Maxim Semenov',
 			'href'     => 'https://smnv.org',
